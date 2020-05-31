@@ -135,12 +135,12 @@ class User with ChangeNotifier {
   Future<void> load() async {
     sharedPrefs ??= await SharedPreferences.getInstance();
     hasCompletedSignup = sharedPrefs.getBool('hasCompletedSignup') ?? false;
-    // _planeHours = sharedPrefs.getInt('planeHours') ?? 0;
-    // _drivingHours = sharedPrefs.getDouble('drivingHours') ?? 0;
-    // _carType = CarType.values[sharedPrefs.getInt('carType') ?? 0];
-    // _busHours = sharedPrefs.getInt('busHours') ?? 1;
-    // _diet = Diet.values[sharedPrefs.getInt('diet') ?? 1];
-    // _houseSize = HouseSize.values[sharedPrefs.getInt('houseSize') ?? 1];
+    _planeHours = sharedPrefs.getInt('planeHours') ?? 0;
+    _drivingHours = sharedPrefs.getDouble('drivingHours') ?? 0;
+    _carType = CarType.values[sharedPrefs.getInt('carType') ?? 0];
+    _busHours = sharedPrefs.getInt('busHours') ?? 1;
+    _diet = Diet.values[sharedPrefs.getInt('diet') ?? 1];
+    _houseSize = HouseSize.values[sharedPrefs.getInt('houseSize') ?? 1];
     notifyListeners();
   }
 
