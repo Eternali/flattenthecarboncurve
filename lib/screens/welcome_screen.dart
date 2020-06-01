@@ -28,7 +28,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             height: MediaQuery.of(context).size.height * 0.35,
             width:MediaQuery.of(context).size.width,
             margin: EdgeInsets.fromLTRB(0, 0, 0, 25.0),
-            padding: EdgeInsets.all(35.0),
+            padding: EdgeInsets.all(5.0),
             decoration: BoxDecoration(
               color: Colors.green[900],
             ),
@@ -37,21 +37,21 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
-                        fontSize: 50.0)
+                        fontSize: MediaQuery.of(context).size.height * .05 + MediaQuery.of(context).size.width * .05)
           ),
           ),
           Container(
             height: MediaQuery.of(context).size.height * 0.2,
             width:MediaQuery.of(context).size.width,
             margin: EdgeInsets.all(7.0),
-            padding: EdgeInsets.all(10.0),
+            padding: EdgeInsets.fromLTRB(2.0, 5.0, 2.0, 5.0),
             child: RaisedButton(
               color: Colors.green[200],
               shape:new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(10.0)),
               child: Text('Calcuate Your Carbon Footprint',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                           fontSize: 25.0)),
+                           fontSize: MediaQuery.of(context).size.height * .025 + MediaQuery.of(context).size.width * .025)),
             onPressed: () {
               Navigator.push(
                 context, 
@@ -63,15 +63,15 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
            Container(
             height: MediaQuery.of(context).size.height * 0.2,
             width:MediaQuery.of(context).size.width,
-            margin: EdgeInsets.all(7.0),
-            padding: EdgeInsets.all(10.0),
+            margin: EdgeInsets.all(1.0),
+            padding: EdgeInsets.fromLTRB(2.0, 5.0, 2.0, 5.0),
             child: RaisedButton(
               color: Colors.green[200],
               shape:new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(10.0)),
               child: Text('Begin Reducing Your CO₂',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                            fontSize: 25.0)),
+                            fontSize: MediaQuery.of(context).size.height * .025 + MediaQuery.of(context).size.width * .025)),
             onPressed: () {
               Navigator.push(
                 context, 
