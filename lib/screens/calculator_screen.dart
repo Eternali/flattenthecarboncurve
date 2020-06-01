@@ -441,7 +441,7 @@ class _CalculatorScreenState extends State<CalculatorScreen>
                     NeumorphicButton(
                       child: Text('FINISH'),
                       onPressed: () {
-                        Navigator.pushNamed(context, '/');
+                        Navigator.pushNamed(context, '/home');
                       },
                     ),
                 ],
