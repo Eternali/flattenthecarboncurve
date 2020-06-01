@@ -18,11 +18,11 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
         children: [
           Container(
             constraints: BoxConstraints.expand(
-              height: MediaQuery.of(context).size.height * 0.1,
+              height: MediaQuery.of(context).size.height * 0.05,
               width: MediaQuery.of(context).size.width,
             ),
             decoration:BoxDecoration(color: Colors.green[500]),
-            child: Image.asset('trees.jpg', fit: BoxFit.cover,),
+            child: Image.asset('trees.jpg', fit: BoxFit.cover,), // image is not working
           ),
           Container(
             height: MediaQuery.of(context).size.height * 0.35,
@@ -46,7 +46,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             margin: EdgeInsets.all(7.0),
             padding: EdgeInsets.fromLTRB(2.0, 5.0, 2.0, 5.0),
             child: RaisedButton(
-              color: Colors.green[200],
+              color: Color.fromRGBO(158, 255, 138,0.8),
               shape:new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(10.0)),
               child: Text('Calcuate Your Carbon Footprint',
                           textAlign: TextAlign.center,
@@ -63,12 +63,12 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
            Container(
             height: MediaQuery.of(context).size.height * 0.2,
             width:MediaQuery.of(context).size.width,
-            margin: EdgeInsets.all(1.0),
+            margin: EdgeInsets.all(7.0),
             padding: EdgeInsets.fromLTRB(2.0, 5.0, 2.0, 5.0),
             child: RaisedButton(
-              color: Colors.green[200],
+              color: Color.fromRGBO(158, 255, 138,0.8),
               shape:new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(10.0)),
-              child: Text('Begin Reducing Your CO₂',
+              child: Text('Begin Reducing Your CO₂ Emissions',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: MediaQuery.of(context).size.height * .025 + MediaQuery.of(context).size.width * .025)),
