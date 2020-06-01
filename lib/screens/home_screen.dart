@@ -43,7 +43,8 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             Text(
               '\nFlatten the Carbon Curve - Daily Updater',
-              style: TextStyle(fontSize: 25),
+              style: TextStyle(fontSize: 25,
+							   fontWeight: FontWeight.bold),
             ),
             /*TextField(
 					decoration: InputDecoration(
@@ -101,7 +102,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 onChanged: (val) {
                   setState(() => _isSel7 = val);
                 }),
-            const SizedBox(height: 30),
+            const SizedBox(height: 10),
             RaisedButton(
               onPressed: totalFootprint,
               child: const Text(
@@ -112,7 +113,7 @@ class _HomeScreenState extends State<HomeScreen> {
             if (footprint != null) Expanded(
               child: Center(
                 child: Text(
-                  'Your footprint is ${footprint.toStringAsPrecision(4)}',
+                  'Your footprint reduction today is ${footprint.toStringAsPrecision(4)}',
                   style: Theme.of(context).textTheme.headline5,
                 ),
               ),
