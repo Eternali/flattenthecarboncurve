@@ -11,14 +11,14 @@ class App extends StatelessWidget {
       create: (_) => User()..load(),
       child: NeumorphicTheme(
         theme: NeumorphicThemeData(
-          baseColor: Colors.grey.shade200,
+          baseColor: Color.fromRGBO(158, 255, 138, 0.8),
           accentColor: Color(0xff2c21ff),
         ),
         child: MaterialApp(
           title: 'Flutter Demo',
           theme: ThemeData.light().copyWith(
             primaryColor: Color(0xff2c21ff),
-            scaffoldBackgroundColor: Colors.grey.shade200,
+            scaffoldBackgroundColor: Color.fromRGBO(158, 255, 138, 0.8),
             visualDensity: VisualDensity.adaptivePlatformDensity,
           ),
           routes: routes,
